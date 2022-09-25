@@ -6,6 +6,8 @@ function squareDigits(num) {
 	// Array.from(`${num}`).map(a => a * a) -- возведение каждого элемента массива в квадрат
 
 	return +(Array.from(`${num}`).map(a => a * a).join(''))
+
+	// return +num.toString().split('').map(i => i*i).join('');
 }
 
 console.log(squareDigits(3212));
